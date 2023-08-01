@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+.searchbar {
+    border: 2px solid;
+    font-size: 1rem;
+    width: 300px;
+    height: 35px;
+    outline: none;
+    border-radius: 10rem;
+    padding: 15px;
+    transition: all .1s;
+    transition-delay: .1s;
+}
+
+.button {
+    height: 15px;
+    position: absolute;
+    top: 0.6rem;
+    right: 1rem;
+    transition: all .1s;
+    transition-delay: .1s;
+}
+.searchbar::placeholder {
+    opacity: .3;
+}
+.container {
+    width: 300px;
+    height: 100%;
+    position: relative;
+    float: right;
+}
+.highlight {
+    background-color: yellow;
+}
+
+.highlighted {
+    color: red;
+}
+#table tbody tr {
+    /* Устанавливаем цвет фона по умолчанию */
+    background-color: white;
+    /* Устанавливаем эффект перехода для свойства background-color с длительностью 0.5 секунды */
+    transition: background-color 0.5s;
+}
+
+/* Выбираем все элементы tr внутри элемента с id table, на которые наведен курсор */
+#table tbody tr:hover {
+    /* Устанавливаем цвет фона при наведении */
+    background-color: rgb(243 244 246);
+}
+#clear-input {
+    /* Устанавливаем размер шрифта и цвет */
+    font-size: 25px;
+    color: gray;
+    position: absolute;
+    right: 305px;
+    /* Устанавливаем курсор в виде указателя */
+    cursor: pointer;
+}
+
+.documentation{
+    color: #6b7280;
+    text-decoration: underline;
+
+}
